@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * @author tinxi
  * @ClassName UserClient
- * @Description TODO
+ * @Description 用户模块客户端
  * @date 2019/7/9 18:03
  */
 @RestController

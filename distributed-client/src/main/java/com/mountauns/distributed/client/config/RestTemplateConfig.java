@@ -9,7 +9,6 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author tinxi
  * @ClassName RestTemplateConfig
- * @Description TODO
  * @date 2019/7/9 21:07
  */
 @Configuration

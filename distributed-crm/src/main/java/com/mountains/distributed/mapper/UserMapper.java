@@ -17,4 +17,9 @@ public interface UserMapper extends BaseMapper<User> {
 
 	List<User> findAll();
 
+	/**
+	 * 获取数据库实例名
+	 * @return
+	 */
+	String getDataBase();
 }

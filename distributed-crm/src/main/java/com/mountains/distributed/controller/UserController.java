@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * @author tinxi
  * @ClassName UserController
- * @Description TODO
  * @date 2019/7/9 13:28
  */
 @RestController

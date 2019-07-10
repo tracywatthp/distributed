@@ -25,6 +25,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 	@Override
 	public boolean add(User user) {
 		// return userMapper.(user) == 1;
+		user.setDbName(userMapper.getDataBase());
 		return this.saveOrUpdate(user);
 	}
 

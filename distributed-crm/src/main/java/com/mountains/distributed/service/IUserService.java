@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * @author tinxi
  * @className IUserService
- * @description TODO
  * @date 2019/7/9 13:29
  */
 public interface IUserService {
