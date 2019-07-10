@@ -1,4 +1,4 @@
-package com.mountauns.distributed.client.config;
+package com.mountains.distributed.client.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,10 +1,10 @@
-package com.mountains.distributed.service.impl;
+package com.mountains.distributed.crm.service.impl;
 
 // import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.mountains.distributed.crm.mapper.UserMapper;
+import com.mountains.distributed.crm.service.IUserService;
 import com.mountains.distributed.entity.crm.sys.User;
-import com.mountains.distributed.mapper.UserMapper;
-import com.mountains.distributed.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

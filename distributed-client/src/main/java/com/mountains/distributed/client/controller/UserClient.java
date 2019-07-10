@@ -1,4 +1,4 @@
-package com.mountauns.distributed.client.controller;
+package com.mountains.distributed.client.controller;
 
 import com.mountains.distributed.entity.crm.sys.User;
 import org.slf4j.Logger;
@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**

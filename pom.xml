@@ -5,18 +5,25 @@
 
     <groupId>com.mountains.distributed</groupId>
     <artifactId>distributed-parent</artifactId>
-    <version>${project.version}</version>
+    <version>0.0.1</version>
+    <packaging>pom</packaging><!--父工程打包方式必须为pom-->
+
     <modules>
-        <module>distributed-api</module>
         <module>distributed-entity</module>
         <module>distributed-crm</module>
         <module>distributed-client</module>
         <module>distributed-eureka</module>
     </modules>
-    <packaging>pom</packaging><!--父工程打包方式必须为pom-->
 
     <name>distributed-parent</name>
     <description>分布式项目</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
 
     <properties>
         <project.version>0.0.1</project.version>
@@ -26,7 +33,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
 
-        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
         <spring-cloud.version>2.0.0.RELEASE</spring-cloud.version>
         <spring-version>4.2.5.RELEASE</spring-version>
         <junit.version>4.12</junit.version>
@@ -37,6 +44,19 @@
         <mysql.connector.version>5.1.29</mysql.connector.version>
 
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -151,11 +171,20 @@
 
     <build>
         <plugins>
+            <!--<plugin>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<fork>true</fork>		&lt;!&ndash; 热部署 该配置必须 &ndash;&gt;-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+
+            <!--增加mavaen打包跳过测试配置-->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
-                    <fork>true</fork>		<!-- 热部署 该配置必须 -->
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
         </plugins>

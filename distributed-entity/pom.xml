@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>distributed-entity</artifactId>
-
     <parent>
         <groupId>com.mountains.distributed</groupId>
         <artifactId>distributed-parent</artifactId>
-        <version>${project.version}</version>
+        <version>0.0.1</version>
     </parent>
+
+    <artifactId>distributed-entity</artifactId>
+    <version>0.0.1</version>
+
+    <name>distributed-entity</name>
+    <description>分布式应用-实体模块</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -22,11 +28,5 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
-
-    <properties>
-        <entity-version>0.0.1</entity-version>
-    </properties>
-
 
 </project>

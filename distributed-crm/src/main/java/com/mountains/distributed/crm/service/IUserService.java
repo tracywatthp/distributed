@@ -1,4 +1,4 @@
-package com.mountains.distributed.service;
+package com.mountains.distributed.crm.service;
 
 import com.mountains.distributed.entity.crm.sys.User;
 

@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>distributed-crm</artifactId>
-    <description>分布式系统-用户模块</description>
-
     <parent>
         <groupId>com.mountains.distributed</groupId>
         <artifactId>distributed-parent</artifactId>
-        <version>${project.version}</version>
+        <version>0.0.1</version>
     </parent>
 
+    <artifactId>distributed-crm</artifactId>
+    <version>0.0.1</version>
+    <name>distributed-crm</name>
+    <description>分布式系统-用户模块</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <dependencies>
         <dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
             <groupId>com.mountains.distributed</groupId>
             <artifactId>distributed-entity</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.1</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -81,5 +84,13 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
