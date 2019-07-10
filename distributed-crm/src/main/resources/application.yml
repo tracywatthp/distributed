@@ -28,3 +28,10 @@ eureka:
     instance-id: distributed-crm
     prefer-ip-address: true  # 访问路径可以显示IP地址
 
+
+# eureka页面实例基本信息配置
+info:
+  app.name: mountains-distributed
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
