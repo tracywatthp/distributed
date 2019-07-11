@@ -14,7 +14,8 @@ import java.util.List;
  * @Description TODO
  * @date 2019/7/11 15:52
  */
-@FeignClient("DISTRIBUTED-CRM")
+// @FeignClient("DISTRIBUTED-CRM")  // 单独用feign的配置
+@FeignClient(value = "DISTRIBUTED-CRM-HYSTRIX", fallbackFactory = UserClientServiceFallBackFactory.class)  //配置服务熔断回调信息处理类
 public interface IUserClientService {
 
 	@RequestMapping(value = "/user/get/{id}", method = RequestMethod.GET)

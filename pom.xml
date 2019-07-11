@@ -11,6 +11,7 @@
     <modules>
         <module>distributed-api</module>
         <module>distributed-crm</module>
+        <module>distributed-crm-hystrix</module>
         <module>distributed-client</module>
         <module>distributed-client-feign</module>
         <module>distributed-eureka</module>

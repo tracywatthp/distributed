@@ -1,0 +1,37 @@
+server:
+  port: 8001
+
+########################## mybatis-plus 配置 ##########################
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml, classpath:mapper/**/*.xml
+
+########################## mybatis-plus 配置 ##########################
+
+spring:
+  profiles:
+    active: mysql
+  application:
+    name: distributed-crm-hystrix
+
+
+
+
+
+
+
+########################## eureka注册中心配置 ##########################
+eureka:
+  client:  #客户端注册进eureka服务列表内
+    serviceUrl:
+      defaultZone: http://eureka1:7001/eureka/,http://eureka2:7002/eureka/,http://eureka3:7003/eureka/
+  instance:
+    instance-id: distributed-crm-hystrix
+    prefer-ip-address: true  # 访问路径可以显示IP地址
+
+
+# eureka页面实例基本信息配置
+info:
+  app.name: mountains-distributed
+  company.name: www.baidu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

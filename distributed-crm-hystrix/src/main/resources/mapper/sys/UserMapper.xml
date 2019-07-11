@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mountains.distributed.crm.mapper.UserMapper">
+
+
+    <insert id="addUser">
+      INSERT INTO user(id, user_no, user_name, db_name) VALUES (#{id},#{userNo},#{userName},DATABASE())
+    </insert>
+
+    <select id="findById" resultType="com.mountains.distributed.api.crm.sys.User" parameterType="long">
+      select * from user where id = #{id}
+    </select>
+
+    <select id="findAll" resultType="com.mountains.distributed.api.crm.sys.User">
+      select * from user
+    </select>
+
+    <select id="getDataBase" resultType="java.lang.String">
+      select DATABASE()
+    </select>
+</mapper>

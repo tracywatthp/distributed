@@ -1,6 +1,9 @@
-
 server:
   port: 80
+
+feign:
+  hystrix:
+    enabled: true   # \u5F00\u542F\u7194\u65AD\u964D\u7EA7\u673A\u5236
 
 
 # \u914D\u7F6Eeureka\u6CE8\u518C\u670D\u52A1\u5730\u5740
