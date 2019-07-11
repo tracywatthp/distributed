@@ -7,11 +7,11 @@
       INSERT INTO user(id, user_no, user_name, db_name) VALUES (#{id},#{userNo},#{userName},DATABASE())
     </insert>
 
-    <select id="findById" resultType="com.mountains.distributed.entity.crm.sys.User" parameterType="long">
+    <select id="findById" resultType="com.mountains.distributed.api.crm.sys.User" parameterType="long">
       select * from user where id = #{id}
     </select>
 
-    <select id="findAll" resultType="com.mountains.distributed.entity.crm.sys.User">
+    <select id="findAll" resultType="com.mountains.distributed.api.crm.sys.User">
       select * from user
     </select>
 

@@ -20,7 +20,7 @@
     <dependencies>
         <dependency><!--引入需要调用的消费者服务jar-->
             <groupId>com.mountains.distributed</groupId>
-            <artifactId>distributed-entity</artifactId>
+            <artifactId>distributed-api</artifactId>
             <version>0.0.1</version>
             <!--<exclusions>-->
             <!--<exclusion>-->

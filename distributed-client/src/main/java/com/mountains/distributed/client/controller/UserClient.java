@@ -1,6 +1,6 @@
 package com.mountains.distributed.client.controller;
 
-import com.mountains.distributed.entity.crm.sys.User;
+import com.mountains.distributed.api.crm.sys.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

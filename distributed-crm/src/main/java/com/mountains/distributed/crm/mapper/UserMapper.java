@@ -3,7 +3,7 @@ package com.mountains.distributed.crm.mapper;
 // import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.mountains.distributed.entity.crm.sys.User;
+import com.mountains.distributed.api.crm.sys.User;
 
 import java.util.List;
 

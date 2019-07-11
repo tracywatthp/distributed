@@ -1,7 +1,7 @@
 package com.mountains.distributed.crm.controller;
 
 import com.mountains.distributed.crm.service.IUserService;
-import com.mountains.distributed.entity.crm.sys.User;
+import com.mountains.distributed.api.crm.sys.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

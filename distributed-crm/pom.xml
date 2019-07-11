@@ -20,7 +20,7 @@
     <dependencies>
         <dependency><!-- 引入自己定义的api通用包，可以使用Dept部门Entity -->
             <groupId>com.mountains.distributed</groupId>
-            <artifactId>distributed-entity</artifactId>
+            <artifactId>distributed-api</artifactId>
             <version>0.0.1</version>
         </dependency>
         <dependency>

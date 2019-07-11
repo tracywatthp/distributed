@@ -4,7 +4,7 @@ package com.mountains.distributed.crm.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mountains.distributed.crm.mapper.UserMapper;
 import com.mountains.distributed.crm.service.IUserService;
-import com.mountains.distributed.entity.crm.sys.User;
+import com.mountains.distributed.api.crm.sys.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

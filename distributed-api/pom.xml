@@ -8,11 +8,11 @@
         <version>0.0.1</version>
     </parent>
 
-    <artifactId>distributed-entity</artifactId>
+    <artifactId>distributed-api</artifactId>
     <version>0.0.1</version>
 
-    <name>distributed-entity</name>
-    <description>分布式应用-实体模块</description>
+    <name>distributed-api</name>
+    <description>分布式应用-公共api模块(包含实体entity)</description>
 
     <properties>
         <java.version>1.8</java.version>
