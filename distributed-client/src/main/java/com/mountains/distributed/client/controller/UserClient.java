@@ -26,7 +26,8 @@ public class UserClient {
 	@Autowired
 	private RestTemplate restTemplate;
 
-	private static final String REST_URL_PREFIX = "http://localhost:8001";
+	private static final String REST_URL_PREFIX = "http://DISTRIBUTED-CRM";
+	// private static final String REST_URL_PREFIX = "http://localhost:8001";
 
 	@RequestMapping(value = "/user/add")
 	public boolean add(User user) {
