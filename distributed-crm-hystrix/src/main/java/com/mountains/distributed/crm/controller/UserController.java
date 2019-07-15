@@ -29,7 +29,7 @@ public class UserController {
 	}
 
 	// 通过此方式进行服务熔断会造成该类里的方法膨胀,且熔断逻辑与业务逻辑高度融和, 故需将此熔断机制抽离出去, 放到service中
-	// @HystrixCommand(fallbackMethod = "defaultStores")
+	@HystrixCommand(fallbackMethod = "defaultStores") // 当需要用hystrix dashboard进行监控必须要配置HystrixCommand 及 fallbackMethod
 	@RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
 	public User get(@PathVariable("id") Long id) {
 		User user = getService().get(id);

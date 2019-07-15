@@ -14,6 +14,7 @@
         <module>distributed-crm-hystrix</module>
         <module>distributed-client</module>
         <module>distributed-client-feign</module>
+        <module>distributed-hystrix-dashboard</module>
         <module>distributed-eureka</module>
     </modules>
 
